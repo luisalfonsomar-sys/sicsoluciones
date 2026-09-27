@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink-950: #0c1117;
+  --color-ink-900: #10161f;
+  --color-ink-800: #171f2b;
+  --color-ink-700: #232e3d;
+  --color-ink-600: #384457;
+  --color-ink-500: #5b6a80;
+  --color-ink-400: #8794a6;
+  --color-ink-300: #b3bdc9;
+  --color-ink-200: #d8dee5;
+  --color-ink-100: #eef1f4;
+  --color-ink-50: #f7f8fa;
+
+  --color-signal-700: #14479a;
+  --color-signal-600: #1c5cc2;
+  --color-signal-500: #2e73dc;
+  --color-signal-400: #5a92e6;
+  --color-signal-300: #93b7ef;
+  --color-signal-100: #e3ecfb;
+
+  --color-caribe-500: #d98a3d;
+  --color-caribe-100: #f8e7d2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ink-50);
+  color: var(--color-ink-900);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-signal-500);
+  color: white;
+}
+
+.noise-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+}
