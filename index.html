@@ -132,25 +132,25 @@
 
         <div class="cards cards--4">
           <article class="card reveal">
-            <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="16" width="40" height="16" rx="3"/><ellipse cx="8" cy="24" rx="4" ry="8"/><path d="M16 16v16M28 16v16"/></svg>
+            <div class="card__media"><img src="assets/img/prod-tuberias.jpg" alt="Tuberías corrugadas de pared estructurada" loading="lazy" width="300" height="300"></div>
             <h3>Tuberías</h3>
             <p>PVC y polietileno para acueducto, alcantarillado, presión y conducción.</p>
             <ul class="tags"><li>PVC</li><li>Polietileno</li><li>Tubosistemas</li></ul>
           </article>
           <article class="card reveal">
-            <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16"/><path d="M24 24l8-6"/><path d="M14 30h20"/><circle cx="24" cy="24" r="2"/></svg>
+            <div class="card__media"><img src="assets/img/prod-medidores.jpg" alt="Medidor de agua con su mecanismo interno a la vista" loading="lazy" width="300" height="300"></div>
             <h3>Medidores</h3>
             <p>Micromedidores y macromedidores para control preciso del consumo de agua.</p>
             <ul class="tags"><li>Micromedición</li><li>Macromedición</li></ul>
           </article>
           <article class="card reveal">
-            <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 34c6-4 10-4 16 0s10 4 16 0 8-4 8-4"/><path d="M4 26c6-4 10-4 16 0s10 4 16 0 8-4 8-4"/><path d="M4 18c6-4 10-4 16 0s10 4 16 0 8-4 8-4"/></svg>
+            <div class="card__media"><img src="assets/img/prod-geotextil.jpg" alt="Muestras de geotextiles tejidos y no tejidos" loading="lazy" width="300" height="300"></div>
             <h3>Geotextiles</h3>
             <p>Geotextiles tejidos y no tejidos de polipropileno, geomembranas, geotubes, drenaje y control de erosión.</p>
             <ul class="tags"><li>Geocompuestos</li><li>Kananet</li><li>Geomembranas</li></ul>
           </article>
           <article class="card reveal">
-            <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 18h20a6 6 0 0 1 6 6v6"/><path d="M10 12v12"/><path d="M16 12h-12"/><path d="M36 36v4M32 38v2M40 38v2"/></svg>
+            <div class="card__media card__media--icon"><svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 18h20a6 6 0 0 1 6 6v6"/><path d="M10 12v12"/><path d="M16 12h-12"/><path d="M36 36v4M32 38v2M40 38v2"/></svg></div>
             <h3>Grifería</h3>
             <p>Abre la llave de nuevas y mejores posibilidades: grifería institucional, temporizada y residencial.</p>
             <ul class="tags"><li>Temporizada</li><li>Institucional</li></ul>
@@ -161,7 +161,7 @@
           <div>
             <h3 class="trust__title">Nuestras marcas</h3>
             <ul class="brands">
-              <li>Tigre</li><li>Gerfor</li><li>Extrucol</li><li>Metacol</li><li>Metrex</li>
+              <li><img src="assets/img/marca-tigre.png" alt="Tigre" loading="lazy"></li><li><img src="assets/img/marca-gerfor.png" alt="Gerfor" loading="lazy"></li><li><img src="assets/img/marca-extrucol.png" alt="Extrucol" loading="lazy"></li><li><img src="assets/img/marca-metacol.png" alt="Metacol" loading="lazy"></li><li><img src="assets/img/marca-metrex.png" alt="Metrex" loading="lazy"></li>
             </ul>
           </div>
           <div>
@@ -196,7 +196,7 @@
             <button role="tab" aria-selected="false" aria-controls="sys-panel" data-sys="6">Aluminio arquitectónico</button>
           </div>
           <div class="systems__panel" id="sys-panel" role="tabpanel" aria-live="polite">
-            <div class="systems__visual" aria-hidden="true"><div class="glass-art" data-art="0"></div></div>
+            <div class="systems__visual"><div class="glass-art" data-art="0" aria-hidden="true"></div><img class="systems__photo" alt="" hidden></div>
             <div class="systems__text">
               <span class="systems__num">01 / 07</span>
               <h3 id="sys-title">Fachadas</h3>
@@ -227,7 +227,7 @@
         </div>
         <div class="project-grid">
           <article class="project reveal" data-tags="vidrio aluminio acero">
-            <div class="project__art project__art--a" aria-hidden="true"></div>
+            <div class="project__art project__art--photo"><img src="assets/img/edificio-avant.jpg" alt="Fachada del Edificio Avant en Valledupar, con balcones y barandas en vidrio" loading="lazy" width="1024" height="1024"></div>
             <div class="project__body">
               <span class="project__place">Valledupar, Cesar</span>
               <h3>Edificio Avant</h3>
@@ -258,6 +258,14 @@
               <ul class="tags"><li>114 casas</li><li>Ventanería</li><li>Puertas-ventanas</li></ul>
             </div>
           </article>
+        </div>
+        <div class="clients reveal">
+          <h3 class="trust__title">Clientes que confían en nosotros</h3>
+          <ul class="clients__list">
+            <li><img src="assets/img/cliente-ao.png" alt="A&amp;O Proyectos" loading="lazy" width="125" height="42"></li>
+            <li><img src="assets/img/cliente-conasel.png" alt="Conasel" loading="lazy" width="149" height="34"></li>
+            <li><img src="assets/img/cliente-maya.png" alt="Maya &amp; Asociados Ltda." loading="lazy" width="110" height="53"></li>
+          </ul>
         </div>
       </div>
     </section>

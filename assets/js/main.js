@@ -85,6 +85,7 @@
       title: 'Barandas en vidrio y acero inoxidable',
       desc: 'Barandas que protegen a las personas en cada espacio, instaladas con distintos tipos de anclaje según el aspecto visual que desee el cliente.',
       items: ['Vidrio templado o laminado', 'Estructura en acero inoxidable', 'Pasamanos en aluminio y acero'],
+      photo: { src: 'assets/img/obra-lma6024.jpg', alt: 'Vivienda con barandas en vidrio templado en balcones y terraza' },
     },
     {
       title: 'Divisiones de baño',
@@ -105,12 +106,14 @@
       title: 'Aluminio arquitectónico',
       desc: 'Fabricamos e instalamos soluciones en aluminio para todo tipo de necesidades, con una amplia variedad de productos requeridos en obra.',
       items: ['Puertas', 'Ventanas', 'Persianas', 'Accesorios'],
+      photo: { src: 'assets/img/obra-lma6101.jpg', alt: 'Instaladores de SIC montando una ventana en aluminio y vidrio' },
     },
   ];
 
   const tabs = [...document.querySelectorAll('.systems__tabs [role="tab"]')];
   const panel = document.querySelector('.systems__panel');
   const art = panel.querySelector('.glass-art');
+  const photo = panel.querySelector('.systems__photo');
   const num = panel.querySelector('.systems__num');
   const title = document.getElementById('sys-title');
   const desc = document.getElementById('sys-desc');
@@ -120,6 +123,9 @@
   const render = (i) => {
     const s = SYSTEMS[i];
     art.dataset.art = i;
+    photo.hidden = !s.photo;
+    if (s.photo) Object.assign(photo, s.photo);
+    else photo.alt = '';
     num.textContent = `${String(i + 1).padStart(2, '0')} / ${String(SYSTEMS.length).padStart(2, '0')}`;
     title.textContent = s.title;
     desc.textContent = s.desc;

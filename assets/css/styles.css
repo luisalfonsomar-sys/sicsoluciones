@@ -184,6 +184,12 @@ button { font: inherit; cursor: pointer; }
 }
 .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 .card__icon { width: 52px; height: 52px; padding: 11px; border-radius: 14px; background: var(--supply-soft); fill: none; stroke: var(--supply); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; margin-bottom: 10px; }
+.card__media { margin: -30px -26px 8px; height: 168px; border-radius: var(--radius-lg) var(--radius-lg) 0 0; overflow: hidden; background: var(--supply-soft); }
+.card__media img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
+.card:hover .card__media img { transform: scale(1.05); }
+.card__media img[src*="medidores"] { object-position: center 20%; }
+.card__media--icon { display: grid; place-items: center; }
+.card__media--icon .card__icon { width: 84px; height: 84px; padding: 18px; margin: 0; background: #fff; stroke-width: 2; }
 .card h3 { font-size: 22px; }
 .card p { font-size: 14.5px; color: var(--muted); flex: 1; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
@@ -192,8 +198,11 @@ button { font: inherit; cursor: pointer; }
 .trust { margin-top: 28px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; }
 .trust > div { background: #fff; border-radius: var(--radius-lg); padding: 28px 30px; box-shadow: var(--shadow); }
 .trust__title { font: 600 12px var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin-bottom: 18px; }
-.brands { display: flex; flex-wrap: wrap; gap: 10px 34px; }
-.brands li { font: 800 clamp(20px, 2vw, 26px)/1.2 var(--display); color: var(--ink); letter-spacing: -.02em; opacity: .8; }
+.brands { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; }
+.brands img { height: 36px; width: auto; filter: brightness(0); opacity: .72; transition: opacity .25s; }
+.brands li:hover img { opacity: 1; }
+.brands img[src*="extrucol"] { height: 24px; }
+.brands img[src*="metrex"] { height: 52px; }
 .certs { display: flex; flex-wrap: wrap; gap: 10px; }
 .certs li { display: inline-flex; gap: 6px; align-items: baseline; padding: 10px 14px; border: 1.5px dashed #e7c3ad; border-radius: 10px; font: 700 18px var(--display); color: var(--ink); }
 .certs b { font-size: 11px; color: var(--supply); letter-spacing: .1em; }
@@ -213,6 +222,9 @@ button { font: inherit; cursor: pointer; }
 .systems__tabs button[aria-selected="true"]::before { content: ""; position: absolute; left: 0; top: 12px; bottom: 12px; width: 3px; border-radius: 3px; background: var(--glass); }
 .systems__panel { display: grid; grid-template-columns: 1fr 1fr; background: var(--ink-2); border-radius: var(--radius-lg); overflow: hidden; min-height: 460px; border: 1px solid rgba(255,255,255,.07); }
 .systems__visual { position: relative; background: linear-gradient(160deg, #1a3a66, #0c1a30); overflow: hidden; }
+.systems__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity .3s; }
+.systems__photo[hidden] { display: none; }
+.is-swapping .systems__photo { opacity: 0; }
 .systems__text { padding: clamp(28px, 4vw, 48px); display: flex; flex-direction: column; gap: 16px; }
 .systems__num { font: 700 13px var(--display); letter-spacing: .14em; color: var(--glass); }
 .systems__text h3 { color: #fff; font-size: clamp(28px, 3vw, 38px); }
@@ -293,6 +305,12 @@ button { font: inherit; cursor: pointer; }
 .project__art--c { background: linear-gradient(90deg, transparent 49.5%, #c9d5e3 49.5% 50.5%, transparent 50.5%), repeating-linear-gradient(180deg, #8ea6c0 0 8px, #b8c8d9 8px 16px); }
 .project__art--d { background: radial-gradient(circle at 80% 20%, rgba(217,105,46,.5), transparent 50%), linear-gradient(135deg, #13284a, #0c1a30); display: grid; place-items: end start; padding: 22px 26px; }
 .project__art--d span { font: 800 110px/0.8 var(--display); color: rgba(255,255,255,.9); letter-spacing: -.05em; }
+.project__art--photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; transition: transform .6s var(--ease); }
+.project:hover .project__art--photo img { transform: scale(1.04); }
+.clients { margin-top: 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 40px; padding: 26px 30px; background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow); }
+.clients .trust__title { margin: 0; }
+.clients__list { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 44px; }
+.clients__list img { height: 44px; width: auto; }
 .project__body { padding: 26px 28px 30px; }
 .project__place { font-size: 13px; font-weight: 700; color: var(--brand); letter-spacing: .04em; }
 .project h3 { font-size: 26px; margin: 6px 0 14px; }
@@ -400,6 +418,8 @@ button { font: inherit; cursor: pointer; }
 @media (max-width: 560px) {
   .wrap { width: calc(100% - 32px); }
   .cards--4, .process { grid-template-columns: 1fr; }
+  .clients__list { gap: 16px 28px; }
+  .clients__list img { height: 36px; }
   .form__row { grid-template-columns: 1fr; }
   .form__actions .btn { flex: 1 1 100%; }
   .footer__grid { grid-template-columns: 1fr; }
