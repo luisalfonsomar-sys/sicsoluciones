@@ -1,39 +1,20 @@
-# SIC — Soluciones Integrales Caribe
+# SIC · Soluciones Integrales Caribe
 
-Redesign of [sicsoluciones.com.co](https://sicsoluciones.com.co) for Soluciones Integrales
-Caribe (Valledupar, Cesar): suministros y obras civiles, y sistemas de vidrio, aluminio y acero.
+Sitio web de Soluciones Integrales Caribe (sicsoluciones.com.co): suministros y obras, y vidrio, aluminio y acero en Valledupar y la región Caribe.
 
-Rebuilt from the original WordPress site's content, structure, and imagery — same two business
-lines, same projects and brands, new front end. Plain HTML, CSS, and JS — no build step, no
-framework, no dependencies.
+Sitio estático (HTML, CSS y JavaScript, sin dependencias de compilación).
 
-## Structure
-
-```
-index.html                    Home
-nosotros.html                 About / company
-suministros-y-obras.html      Suministros y Obras division
-vidrio-aluminio-acero.html    Vidrio, Aluminio y Acero division, with project portfolio
-contacto.html                 Contact form (opens a pre-filled email; no backend)
-css/styles.css                All styles
-js/main.js                    Nav, scroll-reveal, contact form validation
-assets/images/                Photos, logos, brand marks
-assets/favicon.png
-```
-
-## Run locally
-
-Any static file server works. From this folder:
+## Ver localmente
 
 ```bash
-python3 -m http.server 5555
+python3 -m http.server 5173
 ```
 
-Then open `http://localhost:5555`. Opening `index.html` directly from the filesystem also
-works, since there's no build step and no fetch of local files.
+Luego abrir http://localhost:5173.
 
-## Deploy
+## Estructura
 
-Upload the folder as-is to any static host (Netlify, Vercel, GitHub Pages, S3, or a plain
-nginx/Apache server) — there's nothing to build. See the project's deployment notes for an
-example nginx config.
+- `index.html`: página principal
+- `assets/css/styles.css`: estilos
+- `assets/js/main.js`: menú, pestañas de sistemas, filtro de proyectos y formulario de cotización (WhatsApp o correo)
+- `assets/img/`: logo original y fotos
