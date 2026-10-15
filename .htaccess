@@ -1,0 +1,25 @@
+# Redirects from the previous WordPress site (sicsoluciones.com.co) to the static pages.
+# Apache / cPanel. Keep these in place so old links and search results keep working.
+RewriteEngine On
+
+RewriteRule ^sic/?$ /suministros.html [R=301,L,NC]
+RewriteRule ^vidriosyaluminiosenvalledupar/?$ /vidrio-aluminio-acero.html [R=301,L,NC]
+RewriteRule ^about-us/?$ /nosotros.html [R=301,L,NC]
+RewriteRule ^contact-us/?$ /contacto.html [R=301,L,NC]
+RewriteRule ^mapa/?$ /proyectos.html#mapa [R=301,L,NC,NE]
+
+RewriteRule ^galeria-de-imagenes-fachadas/?$ /vidrio-aluminio-acero.html#fachadas [R=301,L,NC,NE]
+RewriteRule ^galeria-de-imagenes-puertas/?$ /vidrio-aluminio-acero.html#puertas [R=301,L,NC,NE]
+RewriteRule ^galeria-de-imagenes-barandas-en-vidrios-y-acero-inoxidable/?$ /vidrio-aluminio-acero.html#barandas [R=301,L,NC,NE]
+RewriteRule ^galeria-de-imagenes-division-de-banos/?$ /vidrio-aluminio-acero.html#banos [R=301,L,NC,NE]
+RewriteRule ^galeria-de-imagenes-division-de-oficina/?$ /vidrio-aluminio-acero.html#oficina [R=301,L,NC,NE]
+RewriteRule ^galeria-de-imagenes-espejos/?$ /vidrio-aluminio-acero.html#espejos [R=301,L,NC,NE]
+RewriteRule ^galeria-de-imagenes-aluminio-arquitectonico/?$ /vidrio-aluminio-acero.html#aluminio [R=301,L,NC,NE]
+
+RewriteRule ^product-category/geosistemas(/.*)?$ /suministros.html#cat-geosistemas [R=301,L,NC,NE]
+RewriteRule ^product-category/tubosistemas(/.*)?$ /suministros.html#cat-tubosistemas [R=301,L,NC,NE]
+RewriteRule ^product-category/linea-agua(/.*)?$ /suministros.html#cat-linea-agua [R=301,L,NC,NE]
+RewriteRule ^product(-category)?/ /suministros.html#catalogo [R=301,L,NC,NE]
+
+# Development files that don't need to be public
+RewriteRule ^(tools|partials|docs)/ - [F,L,NC]

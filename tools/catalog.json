@@ -1,0 +1,109 @@
+[
+  {
+    "id": "tubosistemas",
+    "name": "Tubosistemas",
+    "intro": "Tuberías y accesorios en PVC para edificaciones, redes de infraestructura y sistemas de riego.",
+    "groups": [
+      {
+        "id": "construccion",
+        "name": "Construcción",
+        "products": [
+          {"name": "Presión Extremo Liso", "desc": "Tuberías y accesorios para conducción de agua a presión en redes de suministro de agua en edificaciones."},
+          {"name": "Sanitaria", "desc": "Tuberías y accesorios para conducción de aguas residuales y aguas lluvias en redes de desagüe en edificaciones."},
+          {"name": "Conduit", "desc": "Tuberías y accesorios para la conducción de cableado eléctrico y telefónico en edificaciones."},
+          {"name": "Ventilación", "desc": "Tuberías para la ventilación de redes sanitarias en edificaciones."},
+          {"name": "CPVC", "desc": "Tuberías y accesorios para la conducción de agua caliente en edificaciones."},
+          {"name": "Suprasold", "desc": "Cemento solvente y limpiador para la unión efectiva de tuberías y accesorios de PVC y CPVC."}
+        ]
+      },
+      {
+        "id": "infraestructura",
+        "name": "Infraestructura",
+        "products": [
+          {"name": "Acueducto", "desc": "Tuberías para la conducción de agua cruda o tratada en líneas de aducción, conducción y distribución.", "points": ["Supramec: tubería de PVC-U (PVC rígido) con unión mecánica.", "Supraxial: tubería de PVC-O (PVC orientado)."]},
+          {"name": "Alcantarillado", "desc": "Tuberías de doble pared para la captación y evacuación de aguas residuales y aguas lluvias en redes de alcantarillado.", "points": ["Suprafort: doble pared estructural, también para drenaje subterráneo.", "Supraloc: doble pared de perfil cerrado para aguas servidas y aguas lluvias."]},
+          {"name": "Ducto eléctrico y telefónico", "desc": "Tuberías para alojar y proteger conductores subterráneos eléctricos y telefónicos.", "points": ["Tubería doble pared (TDP): PVC rígido corrugado con pared interior lisa.", "Ducto liso tipo liviano (EB) y tipo pesado (DB), con unión soldada."]}
+        ]
+      },
+      {
+        "id": "riego",
+        "name": "Riego",
+        "products": [
+          {"name": "Supramec Riego", "desc": "Tuberías de unión mecánica para transporte de agua a presión, en riego predial y en distritos de riego. Cuentan con sello elastomérico tipo Rieber, que da mayor hermeticidad y evita el desplazamiento en la campana durante el ensamble.", "points": ["Riego localizado: goteo y micro aspersión.", "Obras de infraestructura de riego."]},
+          {"name": "Suprafort Riego", "desc": "Tuberías de doble extrusión, con pared interior lisa y exterior corrugada, y acople mecánico con doble hidrosello. Una alternativa eficiente para conducir grandes volúmenes de agua a presiones bajas (menores de 60 psi)."},
+          {"name": "Supraxial", "desc": "Tubería con tecnología PVC-O (policloruro de vinilo orientado) para el transporte de agua a presión, usada en tuberías principales de distritos de riego y en sistemas de acueducto.", "points": ["Mayor resistencia al impacto y a la presión hidrostática.", "Mayor capacidad hidráulica.", "Excelente comportamiento frente al golpe de ariete.", "Menores costos de instalación."]},
+          {"name": "Supracompuerta Riego", "desc": "Tuberías portátiles fabricadas bajo la norma S-430-HH del Departamento de Agricultura de los Estados Unidos. Entregan el agua por compuertas directamente sobre los surcos del terreno (riego superficial), cubriendo la mayor área con la menor cantidad de tubos."},
+          {"name": "Presión Extremo Liso Riego", "desc": "Tuberías y accesorios resistentes a la presión para el montaje de unidades de bombeo, filtración, fertilización, cabezales de válvulas y módulos de riego. Su rigidez y resistencia al impacto prolongan la vida útil del sistema."},
+          {"name": "Riego Supramóvil", "desc": "Tuberías portátiles de extremo liso, con protección UV y resistencia al impacto, para cubrir la mayor área posible con tuberías móviles. Útiles donde no es posible instalar sistemas fijos, como terrenos en arriendo o cultivos que no permiten enterrar tubería."},
+          {"name": "Accesorios Supramóvil", "desc": "Acoples macho y hembra para acoplar y desacoplar fácilmente la tubería Supramóvil, compatibles con los accesorios de la línea Presión Extremo Liso (tees, adaptadores, codos de 90° y 45°, tapones)."},
+          {"name": "Riego Predial", "desc": "Tuberías económicas para conducir agua de riego a presiones bajas (no mayores de 80 psi), en sistemas de riego localizado de alta frecuencia: goteo, micro aspersión y aspersión a baja presión."}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "geosistemas",
+    "name": "Geosistemas",
+    "intro": "Geotextiles, drenaje, impermeabilización y protección de suelos para vías, obras hidráulicas y taludes.",
+    "groups": [
+      {
+        "id": "geotextiles",
+        "name": "Geotextiles",
+        "products": [
+          {"name": "Geotextiles tejidos de polipropileno", "desc": "Geotextil fabricado al entrelazar, generalmente en ángulo recto, dos o más conjuntos de hilos, fibras o cintas. Alta resistencia a la tracción con baja deformación y reducida tendencia a la fluencia.", "points": ["Refuerzo y separación en vías.", "Pistas de aterrizaje y campos deportivos.", "Muros de contención.", "Estabilización de suelos blandos."]},
+          {"name": "Geotextiles no tejidos de polipropileno", "desc": "Fabricados con fibras de grapa para drenaje de subsuperficies y separación de suelos. Combinan alta durabilidad con excelentes propiedades hidráulicas y físicas.", "points": ["Separación, drenaje y filtración.", "Repavimentación (no tejido en poliéster).", "Protección de geomembranas.", "Drenaje en vías y aeropuertos."]},
+          {"name": "Geotextiles Mirafi® Serie RSi", "desc": "Geotextil de TenCate que reúne en un solo producto las funciones que necesita una estructura vial: refuerzo, separación, confinamiento y filtración. Permite reducir el espesor de las capas de diseño, con menor mantenimiento y mayor vida útil."},
+          {"name": "Geotextiles Mirafi® H2Ri", "desc": "Geotextil tejido de TenCate para estabilizar suelos blandos y reforzar suelos con asentamiento diferencial, en vías, aeropuertos y ferrocarriles.", "points": ["Integra separación, filtración, refuerzo, confinamiento y drenaje.", "Hilo hidrófilo con acción capilar a través del plano.", "Alto módulo de elasticidad.", "Rollos más anchos, menos desperdicio."]}
+        ]
+      },
+      {
+        "id": "drenaje",
+        "name": "Drenaje",
+        "products": [
+          {"name": "Tubería Kananet", "desc": "Tubo de drenaje flexible en polietileno de alta densidad (PEAD) con corrugación helicoidal, para recolectar el agua que se infiltra en el suelo. Ayuda a remover el exceso de agua en terrenos cultivables.", "points": ["Resistente a la intemperie y a productos químicos.", "Radio de curvatura que permite drenajes curvos y con desniveles.", "Gran capacidad de captación.", "Estructura corrugada de alta resistencia mecánica."]},
+          {"name": "Tubería de drenaje Supradren", "desc": "Tubos corrugados de resina de PVC, resistentes a agentes corrosivos y químicos, fabricados por Gerfor bajo la especificación interna de producto EP0580095. Se usan para remover el exceso de agua del suelo en terrenos cultivables."},
+          {"name": "Geocompuesto para drenaje MacDrain® R", "desc": "Geocompuesto liviano y flexible con núcleo de geomanta tridimensional de polipropileno, termosoldado entre dos geotextiles no tejidos de poliéster. Conduce líquidos y gases a través de su plano para evacuar el agua y el aire del suelo.", "points": ["Elevada capacidad de flujo.", "Liviano y de instalación simple.", "Alivia presiones y empujes hidrostáticos.", "Protege los sistemas de impermeabilización."]}
+        ]
+      },
+      {
+        "id": "proteccion",
+        "name": "Impermeabilización y protección",
+        "products": [
+          {"name": "Geomembranas", "desc": "Geomembranas de polietileno de alta densidad (HDPE) para condiciones expuestas, termofusionables y fabricadas con resinas vírgenes. Se usan como elemento de estanqueidad en contención de líquidos, pilas de lixiviación, canales, embalses y reservorios.", "points": ["Superficie lisa o texturizada.", "Espesores de 0,5 a 2,5 mm.", "Ancho máximo de 7,05 m; largo según requerimiento.", "Resistentes a ácidos, sales, aceites e hidrocarburos."]},
+          {"name": "Geotubes", "desc": "Contenedores Geotube® de estructura textil fuerte y flexible: un método probado y económico para protección de litorales y estructuras marinas.", "points": ["Control de inundaciones.", "Núcleos de dunas contra la erosión de playas.", "Islas, rompeolas, espigones y escolleras.", "Reconstrucción de diques."]},
+          {"name": "Control de erosión", "desc": "Mantos temporales o permanentes que protegen el suelo expuesto al agua, el viento y la gravedad, y permiten el establecimiento de vegetación. Se usan sobre todo en taludes y en el revestimiento de canales y orillas.", "points": ["Instalación fácil y rápida.", "Reduce la escorrentía y la erosión por lluvia y viento.", "Favorece la nueva vegetación y refuerza la existente.", "Permite sembrar antes o después de instalarlo."]}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "linea-agua",
+    "name": "Línea agua",
+    "intro": "Medidores de agua volumétricos y de velocidad, en bronce y composite, y sus accesorios.",
+    "groups": [
+      {
+        "id": "volumetricos",
+        "name": "Medidores volumétricos",
+        "products": [
+          {"name": "Medidor de transmisión mecánica", "specs": ["Bronce", "Composite", "R100 – R160"]},
+          {"name": "Medidor composite de transmisión magnética", "specs": ["Composite", "R160 – R200 – R250"]},
+          {"name": "Medidor en bronce de transmisión magnética", "specs": ["Bronce", "R160"]}
+        ]
+      },
+      {
+        "id": "velocidad",
+        "name": "Medidores de velocidad",
+        "products": [
+          {"name": "Medidor de chorro único, transmisión magnética", "specs": ["Bronce", "Composite", "R100 – R160"]}
+        ]
+      },
+      {
+        "id": "accesorios",
+        "name": "Accesorios",
+        "products": [
+          {"name": "Caja plástica", "specs": []}
+        ]
+      }
+    ]
+  }
+]

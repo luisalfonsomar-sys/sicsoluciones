@@ -4,17 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SIC · Soluciones Integrales Caribe | Suministros, obras, vidrio, aluminio y acero</title>
-  <meta name="description" content="Soluciones Integrales Caribe (SIC): suministro de tuberías, medidores, geotextiles y grifería, y fabricación e instalación de vidrio, aluminio y acero inoxidable en Valledupar y la región Caribe.">
-  <meta name="theme-color" content="#0c1a30">
-  <meta property="og:title" content="SIC · Soluciones Integrales Caribe">
-  <meta property="og:description" content="Suministros y obras · Vidrio, aluminio y acero. Valledupar, Cesar.">
+  <meta name="description" content="Soluciones Integrales Caribe (SIC): suministro de tuberías, medidores y geosistemas, y fabricación e instalación de vidrio, aluminio y acero inoxidable en Valledupar y la región Caribe.">
+  <meta property="og:title" content="SIC · Soluciones Integrales Caribe | Suministros, obras, vidrio, aluminio y acero">
+  <meta property="og:description" content="Soluciones Integrales Caribe (SIC): suministro de tuberías, medidores y geosistemas, y fabricación e instalación de vidrio, aluminio y acero inoxidable en Valledupar y la región Caribe.">
   <meta property="og:image" content="assets/img/vidrio-hero.jpg">
   <meta property="og:type" content="website">
+  <!-- include:head -->
+  <meta name="theme-color" content="#0c1a30">
   <link rel="icon" href="assets/img/logo-circulo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css?v=eb587afb">
+  <!-- /include:head -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -28,40 +30,41 @@
   }
   </script>
 </head>
-<body>
+<body data-page="inicio">
   <a class="skip" href="#main">Saltar al contenido</a>
 
-  <!-- ========== HEADER ========== -->
+  <!-- include:header -->
   <header class="nav" id="top">
     <div class="nav__inner wrap">
-      <a href="#top" class="brand" aria-label="SIC Soluciones Integrales Caribe, inicio">
+      <a href="index.html" class="brand" aria-label="SIC Soluciones Integrales Caribe, inicio">
         <span class="logo brand__mark" aria-hidden="true"></span>
         <span class="brand__text">Soluciones Integrales<br>Caribe</span>
       </a>
       <nav class="nav__links" aria-label="Principal">
-        <a href="#nosotros">Nosotros</a>
-        <a href="#suministros">Suministros</a>
-        <a href="#vidrio">Vidrio y aluminio</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
+        <a href="nosotros.html" data-nav="nosotros">Nosotros</a>
+        <a href="suministros.html" data-nav="suministros">Suministros</a>
+        <a href="vidrio-aluminio-acero.html" data-nav="vidrio">Vidrio y aluminio</a>
+        <a href="proyectos.html" data-nav="proyectos">Proyectos</a>
+        <a href="contacto.html" data-nav="contacto">Contacto</a>
       </nav>
-      <a class="btn btn--sm btn--light nav__cta" href="https://wa.me/573218397060?text=Hola%20SIC%2C%20quisiera%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">Cotizar</a>
+      <a class="btn btn--sm btn--light nav__cta" href="contacto.html">Cotizar</a>
       <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
     </div>
     <div class="mobile-menu" id="mobile-menu" hidden>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#suministros">Suministros y obras</a>
-      <a href="#vidrio">Vidrio, aluminio y acero</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-      <a class="btn btn--accent" href="https://wa.me/573218397060" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+      <a href="index.html" data-nav="inicio" aria-current="page">Inicio</a>
+      <a href="nosotros.html" data-nav="nosotros">Nosotros</a>
+      <a href="suministros.html" data-nav="suministros">Suministros y obras</a>
+      <a href="vidrio-aluminio-acero.html" data-nav="vidrio">Vidrio, aluminio y acero</a>
+      <a href="proyectos.html" data-nav="proyectos">Proyectos</a>
+      <a href="contacto.html" data-nav="contacto">Contacto</a>
+      <a class="btn btn--accent" href="contacto.html">Solicitar cotización</a>
     </div>
   </header>
+  <!-- /include:header -->
 
   <main id="main">
-    <!-- ========== HERO: split gateway, as in the original ========== -->
     <section class="hero" aria-label="Nuestras divisiones">
-      <a class="hero__half hero__half--supply" href="#suministros">
+      <a class="hero__half hero__half--supply" href="suministros.html">
         <img src="assets/img/suministros-hero.jpg" alt="Tuberías corrugadas y de PVC en bodega" fetchpriority="high">
         <div class="hero__content">
           <span class="eyebrow">División 01</span>
@@ -70,7 +73,7 @@
           <span class="hero__link">Ver productos <i aria-hidden="true">→</i></span>
         </div>
       </a>
-      <a class="hero__half hero__half--glass" href="#vidrio">
+      <a class="hero__half hero__half--glass" href="vidrio-aluminio-acero.html">
         <img src="assets/img/vidrio-hero.jpg" alt="Instalador de SIC montando una baranda en acero inoxidable">
         <div class="hero__content">
           <span class="eyebrow">División 02</span>
@@ -88,18 +91,18 @@
       </div>
     </section>
 
-    <!-- ========== FACTS STRIP ========== -->
+    <!-- include:facts -->
     <section class="facts" aria-label="SIC en cifras">
       <div class="wrap facts__grid">
-        <div><strong data-count="2">2</strong><span>divisiones especializadas</span></div>
-        <div><strong data-count="5">5</strong><span>marcas aliadas en tubería</span></div>
-        <div><strong data-count="7">7</strong><span>sistemas en vidrio y aluminio</span></div>
-        <div><strong data-count="114">114</strong><span>casas en un solo proyecto</span></div>
+        <div><strong data-count="100">100</strong><span>clientes satisfechos</span></div>
+        <div><strong data-count="90">90</strong><span>proyectos realizados</span></div>
+        <div><strong data-count="20">20</strong><span>ciudades</span></div>
+        <div><strong data-count="32">32</strong><span>productos en catálogo</span></div>
       </div>
     </section>
+    <!-- /include:facts -->
 
-    <!-- ========== ABOUT ========== -->
-    <section class="section about" id="nosotros">
+    <section class="section about">
       <div class="wrap about__grid">
         <div class="reveal">
           <span class="eyebrow eyebrow--dark">Nosotros</span>
@@ -108,123 +111,66 @@
         <div class="about__body reveal">
           <p class="lead">Somos un equipo de trabajo capacitado, dispuesto a servir y comprometido con su diseño y su puesta en marcha, para que obtenga los resultados que vio sobre planos.</p>
           <p>Atendemos los segmentos de construcción, industria, infraestructura y riego con líneas completas de excelente durabilidad. En vidrio, aluminio y acero inoxidable ofrecemos asesoría, fabricación, instalación y accesorios, adaptándonos a los procesos de cada proyecto arquitectónico.</p>
+          <a class="section-link" href="nosotros.html">Conozca a SIC <span aria-hidden="true">→</span></a>
         </div>
       </div>
-
-      <ol class="wrap process">
-        <li class="reveal"><span>01</span><h3>Asesoría</h3><p>Revisamos planos y necesidades para recomendar el sistema y material adecuado.</p></li>
-        <li class="reveal"><span>02</span><h3>Suministro</h3><p>Materiales de marcas certificadas, con despacho a obra en la región.</p></li>
-        <li class="reveal"><span>03</span><h3>Fabricación</h3><p>Cortamos y armamos a la medida exacta de cada espacio.</p></li>
-        <li class="reveal"><span>04</span><h3>Instalación</h3><p>Personal propio en obra hasta la entrega final del proyecto.</p></li>
-      </ol>
     </section>
 
-    <!-- ========== DIVISION 1: SUMINISTROS ========== -->
-    <section class="section division division--supply" id="suministros">
+    <section class="section divisions" aria-labelledby="divisiones-titulo">
       <div class="wrap">
         <header class="division__head reveal">
           <div>
-            <span class="eyebrow eyebrow--accent">División 01 · Suministros y obras</span>
-            <h2 class="h2">Soluciones llenas de innovación y calidad para cada red.</h2>
+            <span class="eyebrow eyebrow--dark">Divisiones</span>
+            <h2 class="h2" id="divisiones-titulo">Dos divisiones, un mismo equipo en obra.</h2>
           </div>
-          <p>Líneas de geosistemas, agua y tubosistemas para obras de construcción, infraestructura e industria, con la tranquilidad de materiales certificados.</p>
+          <div class="division__aside">
+            <p>Elija por dónde empezar: materiales para redes y obras civiles, o sistemas en vidrio, aluminio y acero fabricados e instalados a la medida.</p>
+          </div>
         </header>
-
-        <div class="cards cards--4">
-          <article class="card reveal">
-            <div class="card__media"><img src="assets/img/prod-tuberias.jpg" alt="Tuberías corrugadas de pared estructurada" loading="lazy" width="300" height="300"></div>
-            <h3>Tuberías</h3>
-            <p>PVC y polietileno para acueducto, alcantarillado, presión y conducción.</p>
-            <ul class="tags"><li>PVC</li><li>Polietileno</li><li>Tubosistemas</li></ul>
-          </article>
-          <article class="card reveal">
-            <div class="card__media"><img src="assets/img/prod-medidores.jpg" alt="Medidor de agua con su mecanismo interno a la vista" loading="lazy" width="300" height="300"></div>
-            <h3>Medidores</h3>
-            <p>Micromedidores y macromedidores para control preciso del consumo de agua.</p>
-            <ul class="tags"><li>Micromedición</li><li>Macromedición</li></ul>
-          </article>
-          <article class="card reveal">
-            <div class="card__media"><img src="assets/img/prod-geotextil.jpg" alt="Muestras de geotextiles tejidos y no tejidos" loading="lazy" width="300" height="300"></div>
-            <h3>Geotextiles</h3>
-            <p>Geotextiles tejidos y no tejidos de polipropileno, geomembranas, geotubes, drenaje y control de erosión.</p>
-            <ul class="tags"><li>Geocompuestos</li><li>Kananet</li><li>Geomembranas</li></ul>
-          </article>
-          <article class="card reveal">
-            <div class="card__media card__media--icon"><svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 18h20a6 6 0 0 1 6 6v6"/><path d="M10 12v12"/><path d="M16 12h-12"/><path d="M36 36v4M32 38v2M40 38v2"/></svg></div>
-            <h3>Grifería</h3>
-            <p>Abre la llave de nuevas y mejores posibilidades: grifería institucional, temporizada y residencial.</p>
-            <ul class="tags"><li>Temporizada</li><li>Institucional</li></ul>
-          </article>
-        </div>
-
-        <div class="trust reveal">
-          <div>
-            <h3 class="trust__title">Nuestras marcas</h3>
-            <ul class="brands">
-              <li><img src="assets/img/marca-tigre.png" alt="Tigre" loading="lazy"></li><li><img src="assets/img/marca-gerfor.png" alt="Gerfor" loading="lazy"></li><li><img src="assets/img/marca-extrucol.png" alt="Extrucol" loading="lazy"></li><li><img src="assets/img/marca-metacol.png" alt="Metacol" loading="lazy"></li><li><img src="assets/img/marca-metrex.png" alt="Metrex" loading="lazy"></li>
+        <div class="divisions__grid">
+          <article class="division-card division-card--supply reveal">
+            <span class="division-card__num">01</span>
+            <h3><a href="suministros.html">Suministros y obras</a></h3>
+            <p>Líneas completas para construcción, infraestructura, industria y riego, de marcas certificadas.</p>
+            <ul class="division-card__list">
+              <li><a href="suministros.html#cat-tubosistemas">Tubosistemas <span>17 productos</span></a></li>
+              <li><a href="suministros.html#cat-geosistemas">Geosistemas <span>10 productos</span></a></li>
+              <li><a href="suministros.html#cat-linea-agua">Línea agua <span>5 productos</span></a></li>
             </ul>
-          </div>
-          <div>
-            <h3 class="trust__title">Certificados de calidad</h3>
-            <ul class="certs">
-              <li><b>NTC</b>382</li><li><b>NTC</b>576</li><li><b>NTC</b>979</li><li><b>NTC</b>1062</li>
+            <a class="btn btn--supply" href="suministros.html#catalogo">Ver el catálogo</a>
+          </article>
+          <article class="division-card division-card--glass reveal">
+            <span class="division-card__num">02</span>
+            <h3><a href="vidrio-aluminio-acero.html">Vidrio, aluminio y acero</a></h3>
+            <p>Siete sistemas fabricados e instalados por nuestro propio equipo en Valledupar y la región.</p>
+            <ul class="division-card__list division-card__list--cols">
+              <li><a href="vidrio-aluminio-acero.html#fachadas">Fachadas <span aria-hidden="true">→</span></a></li>
+              <li><a href="vidrio-aluminio-acero.html#puertas">Puertas <span aria-hidden="true">→</span></a></li>
+              <li><a href="vidrio-aluminio-acero.html#barandas">Barandas <span aria-hidden="true">→</span></a></li>
+              <li><a href="vidrio-aluminio-acero.html#banos">Divisiones de baño <span aria-hidden="true">→</span></a></li>
+              <li><a href="vidrio-aluminio-acero.html#oficina">Divisiones de oficina <span aria-hidden="true">→</span></a></li>
+              <li><a href="vidrio-aluminio-acero.html#espejos">Espejos <span aria-hidden="true">→</span></a></li>
+              <li><a href="vidrio-aluminio-acero.html#aluminio">Aluminio arquitectónico <span aria-hidden="true">→</span></a></li>
             </ul>
-          </div>
+            <a class="btn btn--glass-solid" href="vidrio-aluminio-acero.html#sistemas">Ver los sistemas</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ========== DIVISION 2: VIDRIO, ALUMINIO Y ACERO ========== -->
-    <section class="section division division--glass" id="vidrio">
-      <div class="wrap">
-        <header class="division__head reveal">
-          <div>
-            <span class="eyebrow eyebrow--glass">División 02 · Vidrio, aluminio y acero</span>
-            <h2 class="h2">Damos el toque de sofisticación que necesita su proyecto.</h2>
-          </div>
-          <p>Carpintería en aluminio, vidrio y acero inoxidable con sistemas que dan a cada espacio arquitectónico una apariencia exclusiva y de alta calidad.</p>
-        </header>
-
-        <div class="systems">
-          <div class="systems__tabs" role="tablist" aria-label="Sistemas en vidrio, aluminio y acero">
-            <button role="tab" aria-selected="true" aria-controls="sys-panel" data-sys="0">Fachadas</button>
-            <button role="tab" aria-selected="false" aria-controls="sys-panel" data-sys="1">Puertas</button>
-            <button role="tab" aria-selected="false" aria-controls="sys-panel" data-sys="2">Barandas</button>
-            <button role="tab" aria-selected="false" aria-controls="sys-panel" data-sys="3">Divisiones de baño</button>
-            <button role="tab" aria-selected="false" aria-controls="sys-panel" data-sys="4">Divisiones de oficina</button>
-            <button role="tab" aria-selected="false" aria-controls="sys-panel" data-sys="5">Espejos</button>
-            <button role="tab" aria-selected="false" aria-controls="sys-panel" data-sys="6">Aluminio arquitectónico</button>
-          </div>
-          <div class="systems__panel" id="sys-panel" role="tabpanel" aria-live="polite">
-            <div class="systems__visual"><div class="glass-art" data-art="0" aria-hidden="true"></div><img class="systems__photo" alt="" hidden></div>
-            <div class="systems__text">
-              <span class="systems__num">01 / 07</span>
-              <h3 id="sys-title">Fachadas</h3>
-              <p id="sys-desc"></p>
-              <ul class="checklist" id="sys-list"></ul>
-              <a class="btn btn--glass" href="#contacto" data-prefill>Cotizar este sistema</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== PROJECTS ========== -->
-    <section class="section projects" id="proyectos">
+    <section class="section projects">
       <div class="wrap">
         <header class="division__head reveal">
           <div>
             <span class="eyebrow eyebrow--dark">Proyectos</span>
             <h2 class="h2">Obras que ya cuentan nuestra historia.</h2>
           </div>
-          <p>Algunos de los proyectos en Cesar y La Guajira donde fabricamos e instalamos nuestros sistemas.</p>
+          <div class="division__aside">
+            <p>Edificios, conjuntos residenciales y redes de infraestructura en Cesar, La Guajira y la región Caribe.</p>
+            <a class="section-link" href="proyectos.html">Ver los 29 proyectos y el mapa <span aria-hidden="true">→</span></a>
+          </div>
         </header>
-        <div class="filter reveal" role="group" aria-label="Filtrar proyectos">
-          <button class="is-active" data-filter="all">Todos</button>
-          <button data-filter="vidrio">Vidrio</button>
-          <button data-filter="aluminio">Aluminio</button>
-          <button data-filter="acero">Acero</button>
-        </div>
+        <!-- include:featured-projects -->
         <div class="project-grid">
           <article class="project reveal" data-tags="vidrio aluminio acero">
             <div class="project__art project__art--photo"><img src="assets/img/edificio-avant.jpg" alt="Fachada del Edificio Avant en Valledupar, con balcones y barandas en vidrio" loading="lazy" width="1024" height="1024"></div>
@@ -259,6 +205,8 @@
             </div>
           </article>
         </div>
+        <!-- /include:featured-projects -->
+        <!-- include:clients -->
         <div class="clients reveal">
           <h3 class="trust__title">Clientes que confían en nosotros</h3>
           <ul class="clients__list">
@@ -267,84 +215,45 @@
             <li><img src="assets/img/cliente-maya.png" alt="Maya &amp; Asociados Ltda." loading="lazy" width="110" height="53"></li>
           </ul>
         </div>
+        <!-- /include:clients -->
       </div>
     </section>
 
-    <!-- ========== CTA BAND ========== -->
+    <!-- include:cta -->
     <section class="band">
       <div class="wrap band__inner reveal">
         <h2>¿Tiene planos listos? <span>Le cotizamos el suministro o la instalación.</span></h2>
-        <a class="btn btn--accent" href="https://wa.me/573218397060?text=Hola%20SIC%2C%20tengo%20un%20proyecto%20y%20quisiera%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">Hablar por WhatsApp</a>
-      </div>
-    </section>
-
-    <!-- ========== CONTACT ========== -->
-    <section class="section contact" id="contacto">
-      <div class="wrap contact__grid">
-        <div class="reveal">
-          <span class="eyebrow eyebrow--dark">Contáctanos</span>
-          <h2 class="h2">Brindaremos el soporte necesario para resolver sus dudas.</h2>
-          <ul class="contact__list">
-            <li>
-              <span class="contact__label">Obras y arquitectura</span>
-              <a href="mailto:arqobras@sicsoluciones.com.co">arqobras@sicsoluciones.com.co</a>
-            </li>
-            <li>
-              <span class="contact__label">Gerencia</span>
-              <a href="mailto:gerencia@sicsoluciones.com.co">gerencia@sicsoluciones.com.co</a>
-            </li>
-            <li>
-              <span class="contact__label">Teléfonos</span>
-              <a href="tel:+573218397060">321 839 7060</a> · <a href="tel:+573165793929">316 579 3929</a>
-            </li>
-            <li>
-              <span class="contact__label">Cobertura</span>
-              Valledupar, Cesar, La Guajira y la región Caribe
-            </li>
-          </ul>
+        <div class="band__actions">
+          <a class="btn btn--accent" href="contacto.html">Solicitar cotización</a>
+          <a class="btn btn--on-dark" href="https://wa.me/573218397060?text=Hola%20SIC%2C%20tengo%20un%20proyecto%20y%20quisiera%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">WhatsApp</a>
         </div>
-
-        <form class="form reveal" id="quote-form" novalidate>
-          <h3>Solicite una cotización</h3>
-          <div class="form__row">
-            <label>Nombre<input name="nombre" autocomplete="name" required></label>
-            <label>Teléfono<input name="telefono" type="tel" autocomplete="tel" required></label>
-          </div>
-          <label>Ciudad<input name="ciudad" autocomplete="address-level2" placeholder="Ej. Valledupar"></label>
-          <fieldset class="form__choice">
-            <legend>¿Qué necesita?</legend>
-            <label><input type="radio" name="division" value="Suministros y obras" checked> Suministros y obras</label>
-            <label><input type="radio" name="division" value="Vidrio, aluminio y acero"> Vidrio, aluminio y acero</label>
-          </fieldset>
-          <label>Detalle del proyecto<textarea name="mensaje" rows="4" placeholder="Producto, cantidades, medidas o tipo de obra" required></textarea></label>
-          <p class="form__error" id="form-error" role="alert" hidden>Complete nombre, teléfono y detalle del proyecto.</p>
-          <div class="form__actions">
-            <button class="btn btn--accent" type="submit" data-channel="whatsapp">Enviar por WhatsApp</button>
-            <button class="btn btn--ghost" type="submit" data-channel="email">Enviar por correo</button>
-          </div>
-        </form>
       </div>
     </section>
+    <!-- /include:cta -->
   </main>
 
-  <!-- ========== FOOTER ========== -->
+  <!-- include:footer -->
   <footer class="footer">
     <div class="wrap footer__grid">
       <div>
-        <a href="#top" class="brand brand--footer" aria-label="Volver arriba">
+        <a href="index.html" class="brand brand--footer" aria-label="SIC Soluciones Integrales Caribe, inicio">
           <span class="logo brand__mark" aria-hidden="true"></span>
           <span class="brand__text">Soluciones Integrales<br>Caribe</span>
         </a>
-        <p class="footer__tag">Suministros y obras · Vidrio, aluminio y acero</p>
+        <p class="footer__tag">Suministros y obras · Vidrio, aluminio y acero. Valledupar, Cesar.</p>
       </div>
-      <div>
+      <nav aria-label="Empresa">
         <h4>Empresa</h4>
-        <a href="#nosotros">Nosotros</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a>
-      </div>
-      <div>
+        <a href="index.html">Inicio</a><a href="nosotros.html">Nosotros</a><a href="proyectos.html">Proyectos</a><a href="contacto.html">Contacto</a>
+      </nav>
+      <nav aria-label="Divisiones">
         <h4>Divisiones</h4>
-        <a href="#suministros">Suministros y obras</a><a href="#vidrio">Vidrio, aluminio y acero</a>
-      </div>
+        <a href="suministros.html">Suministros y obras</a>
+        <a href="suministros.html#cat-tubosistemas">Tubosistemas</a>
+        <a href="suministros.html#cat-geosistemas">Geosistemas</a>
+        <a href="suministros.html#cat-linea-agua">Línea agua</a>
+        <a href="vidrio-aluminio-acero.html">Vidrio, aluminio y acero</a>
+      </nav>
       <div>
         <h4>Contacto</h4>
         <a href="mailto:arqobras@sicsoluciones.com.co">arqobras@sicsoluciones.com.co</a>
@@ -355,7 +264,7 @@
     </div>
     <div class="wrap footer__bottom">
       <span>© <span id="year">2026</span> Soluciones Integrales Caribe</span>
-      <span>Developed by <b>@soyluismarti</b></span>
+      <span>Developed by <a href="https://luismarti.com" target="_blank" rel="noopener">luismarti.com</a></span>
     </div>
   </footer>
 
@@ -363,6 +272,8 @@
     <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.4 14.4 14.4 0 0 0 5.6 4.9c2 .9 2.9 1 3.9.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.7-.4z"/></svg>
   </a>
 
-  <script src="assets/js/main.js" defer></script>
+
+  <script src="assets/js/main.js?v=a63f572d" defer></script>
+  <!-- /include:footer -->
 </body>
 </html>

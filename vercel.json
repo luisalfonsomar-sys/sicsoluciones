@@ -1,0 +1,130 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/sic",
+      "destination": "/suministros.html",
+      "permanent": true
+    },
+    {
+      "source": "/sic/",
+      "destination": "/suministros.html",
+      "permanent": true
+    },
+    {
+      "source": "/Vidriosyaluminiosenvalledupar",
+      "destination": "/vidrio-aluminio-acero.html",
+      "permanent": true
+    },
+    {
+      "source": "/Vidriosyaluminiosenvalledupar/",
+      "destination": "/vidrio-aluminio-acero.html",
+      "permanent": true
+    },
+    {
+      "source": "/vidriosyaluminiosenvalledupar",
+      "destination": "/vidrio-aluminio-acero.html",
+      "permanent": true
+    },
+    {
+      "source": "/vidriosyaluminiosenvalledupar/",
+      "destination": "/vidrio-aluminio-acero.html",
+      "permanent": true
+    },
+    {
+      "source": "/about-us/:rest*",
+      "destination": "/nosotros.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us/:rest*",
+      "destination": "/contacto.html",
+      "permanent": true
+    },
+    {
+      "source": "/mapa/:rest*",
+      "destination": "/proyectos.html#mapa",
+      "permanent": true
+    },
+    {
+      "source": "/galeria-de-imagenes-fachadas/:rest*",
+      "destination": "/vidrio-aluminio-acero.html#fachadas",
+      "permanent": true
+    },
+    {
+      "source": "/galeria-de-imagenes-puertas/:rest*",
+      "destination": "/vidrio-aluminio-acero.html#puertas",
+      "permanent": true
+    },
+    {
+      "source": "/galeria-de-imagenes-barandas-en-vidrios-y-acero-inoxidable/:rest*",
+      "destination": "/vidrio-aluminio-acero.html#barandas",
+      "permanent": true
+    },
+    {
+      "source": "/galeria-de-imagenes-division-de-banos/:rest*",
+      "destination": "/vidrio-aluminio-acero.html#banos",
+      "permanent": true
+    },
+    {
+      "source": "/galeria-de-imagenes-division-de-oficina/:rest*",
+      "destination": "/vidrio-aluminio-acero.html#oficina",
+      "permanent": true
+    },
+    {
+      "source": "/galeria-de-imagenes-espejos/:rest*",
+      "destination": "/vidrio-aluminio-acero.html#espejos",
+      "permanent": true
+    },
+    {
+      "source": "/galeria-de-imagenes-aluminio-arquitectonico/:rest*",
+      "destination": "/vidrio-aluminio-acero.html#aluminio",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/geosistemas/:rest*",
+      "destination": "/suministros.html#cat-geosistemas",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/tubosistemas/:rest*",
+      "destination": "/suministros.html#cat-tubosistemas",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/linea-agua/:rest*",
+      "destination": "/suministros.html#cat-linea-agua",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/:rest*",
+      "destination": "/suministros.html#catalogo",
+      "permanent": true
+    },
+    {
+      "source": "/product/:rest*",
+      "destination": "/suministros.html#catalogo",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(css|js)/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    }
+  ]
+}
