@@ -32,77 +32,77 @@
       "permanent": true
     },
     {
-      "source": "/about-us/:rest*",
+      "source": "/about-us(/.*)?",
       "destination": "/nosotros.html",
       "permanent": true
     },
     {
-      "source": "/contact-us/:rest*",
+      "source": "/contact-us(/.*)?",
       "destination": "/contacto.html",
       "permanent": true
     },
     {
-      "source": "/mapa/:rest*",
+      "source": "/mapa(/.*)?",
       "destination": "/proyectos.html#mapa",
       "permanent": true
     },
     {
-      "source": "/galeria-de-imagenes-fachadas/:rest*",
+      "source": "/galeria-de-imagenes-fachadas(/.*)?",
       "destination": "/vidrio-aluminio-acero.html#fachadas",
       "permanent": true
     },
     {
-      "source": "/galeria-de-imagenes-puertas/:rest*",
+      "source": "/galeria-de-imagenes-puertas(/.*)?",
       "destination": "/vidrio-aluminio-acero.html#puertas",
       "permanent": true
     },
     {
-      "source": "/galeria-de-imagenes-barandas-en-vidrios-y-acero-inoxidable/:rest*",
+      "source": "/galeria-de-imagenes-barandas-en-vidrios-y-acero-inoxidable(/.*)?",
       "destination": "/vidrio-aluminio-acero.html#barandas",
       "permanent": true
     },
     {
-      "source": "/galeria-de-imagenes-division-de-banos/:rest*",
+      "source": "/galeria-de-imagenes-division-de-banos(/.*)?",
       "destination": "/vidrio-aluminio-acero.html#banos",
       "permanent": true
     },
     {
-      "source": "/galeria-de-imagenes-division-de-oficina/:rest*",
+      "source": "/galeria-de-imagenes-division-de-oficina(/.*)?",
       "destination": "/vidrio-aluminio-acero.html#oficina",
       "permanent": true
     },
     {
-      "source": "/galeria-de-imagenes-espejos/:rest*",
+      "source": "/galeria-de-imagenes-espejos(/.*)?",
       "destination": "/vidrio-aluminio-acero.html#espejos",
       "permanent": true
     },
     {
-      "source": "/galeria-de-imagenes-aluminio-arquitectonico/:rest*",
+      "source": "/galeria-de-imagenes-aluminio-arquitectonico(/.*)?",
       "destination": "/vidrio-aluminio-acero.html#aluminio",
       "permanent": true
     },
     {
-      "source": "/product-category/geosistemas/:rest*",
+      "source": "/product-category/geosistemas(/.*)?",
       "destination": "/suministros.html#cat-geosistemas",
       "permanent": true
     },
     {
-      "source": "/product-category/tubosistemas/:rest*",
+      "source": "/product-category/tubosistemas(/.*)?",
       "destination": "/suministros.html#cat-tubosistemas",
       "permanent": true
     },
     {
-      "source": "/product-category/linea-agua/:rest*",
+      "source": "/product-category/linea-agua(/.*)?",
       "destination": "/suministros.html#cat-linea-agua",
       "permanent": true
     },
     {
-      "source": "/product-category/:rest*",
+      "source": "/product-category(/.*)?",
       "destination": "/suministros.html#catalogo",
       "permanent": true
     },
     {
-      "source": "/product/:rest*",
+      "source": "/product(/.*)?",
       "destination": "/suministros.html#catalogo",
       "permanent": true
     }
